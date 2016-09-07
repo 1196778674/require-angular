@@ -1,0 +1,9 @@
+/node_modules
+/.tmp
+/bower_components
+/.bowerrc
+/.editorconfig
+/.gitattributes
+/.jscsrc
+/.jshintrc
+/.yo-rc.json
