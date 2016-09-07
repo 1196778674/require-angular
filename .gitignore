@@ -6,4 +6,5 @@
 /.gitattributes
 /.jscsrc
 /.jshintrc
+/.sass-cache
 /.yo-rc.json
