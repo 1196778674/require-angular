@@ -458,7 +458,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep:serve',
-      'concurrent:server',
+      //'concurrent:server',
       'autoprefixer',
       'bower',
       'connect:livereload',
