@@ -71,10 +71,10 @@ if (paths) {
 
 require([
         'angular',
-        'cpx-admin',
+        'adminApp',
         'controllers/IndexCtrl'
     ],
     function() {
-        angular.bootstrap(document, ['cpx-admin']);
+        angular.bootstrap(document, ['adminApp']);
     }
 );

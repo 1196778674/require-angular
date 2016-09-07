@@ -7,11 +7,11 @@ define(['routes',
 	'bootstrap',
 	'angular-translate'],
 	function(config, dependencyResolverFor, i18n) {
-		var cpx-admin = angular.module('cpx-admin', [
+		var adminApp = angular.module('adminApp', [
 			'ngRoute',
 			'pascalprecht.translate'
 		]);
-		cpx-admin
+		adminApp
 			.config(
 				['$routeProvider',
 				'$controllerProvider',
@@ -21,11 +21,11 @@ define(['routes',
 				'$translateProvider',
 				function($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $translateProvider) {
 
-					cpx-admin.controller = $controllerProvider.register;
-					cpx-admin.directive = $compileProvider.directive;
-					cpx-admin.filter = $filterProvider.register;
-					cpx-admin.factory = $provide.factory;
-					cpx-admin.service = $provide.service;
+					adminApp.controller = $controllerProvider.register;
+					adminApp.directive = $compileProvider.directive;
+					adminApp.filter = $filterProvider.register;
+					adminApp.factory = $provide.factory;
+					adminApp.service = $provide.service;
 
 					if (config.routes !== undefined) {
 						angular.forEach(config.routes, function(route, path) {
@@ -39,6 +39,6 @@ define(['routes',
 					$translateProvider.translations('preferredLanguage', i18n);
 					$translateProvider.preferredLanguage('preferredLanguage');
 				}]);
-		return cpx-admin;
+		return adminApp;
 	}
 );

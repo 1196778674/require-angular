@@ -1,7 +1,7 @@
 'use strict';
-define(['cpx-admin'], function(cpx-admin) {
+define(['adminApp'], function(adminApp) {
 
-	cpx-admin.service('SampleService', function() {
+	adminApp.service('SampleService', function() {
 
 	});
 });

@@ -1,7 +1,7 @@
 'use strict';
-define(['cpx-admin'], function(cpx-admin) {
+define(['adminApp'], function(adminApp) {
 
-	cpx-admin.directive('sample', function() {
+	adminApp.directive('sample', function() {
 		return {
 			restrict: 'E',
 			template: '<span>Sample</span>'

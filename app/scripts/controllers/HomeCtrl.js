@@ -1,7 +1,7 @@
 'use strict';
-define(['cpx-admin'], function(cpx-admin) {
+define(['adminApp'], function(adminApp) {
 
-	cpx-admin.controller('HomeCtrl', function($scope) {
+	adminApp.controller('HomeCtrl', function($scope) {
 		$scope.homePageText = 'This is your homepage';
 	});
 });
