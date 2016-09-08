@@ -24,7 +24,8 @@ require.config({
         scrollspy: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy',
         tab: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab',
         tooltip: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip',
-        transition: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition'
+        transition: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition',
+        'angular-ui-router': '../../bower_components/angular-ui-router/release/angular-ui-router'
     },
     shim: {
         angular: {
@@ -73,7 +74,8 @@ if (paths) {
 require([
         'angular',
         'adminApp',
-        'controllers/IndexCtrl'
+        'controllers/IndexCtrl',
+        'directives/IndexDir'
     ],
     function() {
         angular.bootstrap(document, ['adminApp']);
