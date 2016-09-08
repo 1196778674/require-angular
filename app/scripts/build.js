@@ -74,8 +74,9 @@ if (paths) {
 require([
         'angular',
         'adminApp',
+        'factorys/HttpGet',
+        'directives/LeftHeightDir',
         'controllers/IndexCtrl',
-        'directives/IndexDir'
     ],
     function() {
         angular.bootstrap(document, ['adminApp']);

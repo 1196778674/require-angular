@@ -1,5 +1,7 @@
 <div ng-controller="IndexCtrl">
-	{{welcomeText}}
+	<ul>
+		<li ng-repeat="(key,value) in welcomeText">
+			{{value.type}} -- {{value.number}}
+		</li>
+	</ul>
 </div>
-
-<text></text>
