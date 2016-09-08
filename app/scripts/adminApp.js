@@ -36,16 +36,40 @@ define([
 		                        '': {
 		                            templateUrl: 'views/home.html'
 		                        },
-		                        // 'header@index': {
-		                        //     templateUrl: 'views/partials/header.html'
-		                        // },
-		                        // 'left@index': {
-		                        //     templateUrl: 'views/partials/left.html'
-		                        // },
-		                        // 'main@index': {
-		                        //     templateUrl: 'views/partials/right.html'
-		                        // }
+		                        'header@index': {
+		                            templateUrl: 'views/partials/header.html'
+		                        },
+		                        'left@index': {
+		                            templateUrl: 'views/partials/left.html'
+		                        },
+		                        'main@index': {
+		                            templateUrl: 'views/partials/main.html'
+		                        }
 		                    }
+		                })
+		                .state('index.storemanagement',{
+		                	url: '/storemanagement',
+		                	views: {
+		                		'main@index': {
+				                    templateUrl: 'views/storemanagement/storemanagement.html'
+				                }
+		                	}
+		                })
+		                .state('index.contractedstores',{
+		                	url: '/contractedstores',
+		                	views: {
+		                		'main@index': {
+				                    templateUrl: 'views/contractedstores/contractedstores.html'
+				                }
+		                	}
+		                })
+		                .state('index.datastatistics',{
+		                	url: '/datastatistics',
+		                	views: {
+		                		'main@index': {
+				                    templateUrl: 'views/datastatistics/datastatistics.html'
+				                }
+		                	}
 		                })
 				}]);
 		return adminApp;

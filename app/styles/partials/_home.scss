@@ -1,1 +1,24 @@
 @import 'modules/variables';
+@import 'header';
+@import "left";
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+.cpx-admin-main{
+	width: 100%;
+	.cpx-admin-left{
+		float: left;
+		width: 60px;
+	}
+	.cpx-admin-right{
+		float: left;
+		margin-left: 20px;
+	}
+}
