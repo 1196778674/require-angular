@@ -1,0 +1,1 @@
+define(["adminApp"],function(a){a.service("SampleService",function(){})});
