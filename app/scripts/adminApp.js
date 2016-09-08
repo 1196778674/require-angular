@@ -1,25 +1,26 @@
 'use strict';
-define(['routes',
+define([
 	'services/dependencyResolverFor',
 	'i18n/i18nLoader!',
 	'angular',
-	'angular-route',
+	'ui-router',
 	'bootstrap',
 	'angular-translate'],
 	function(config, dependencyResolverFor, i18n) {
 		var adminApp = angular.module('adminApp', [
-			'ngRoute',
+			'ui.router',
 			'pascalprecht.translate'
 		]);
 		adminApp
 			.config(
-				['$routeProvider',
+				['$stateProvider',
+				'$urlRouterProvider',
 				'$controllerProvider',
 				'$compileProvider',
 				'$filterProvider',
 				'$provide',
 				'$translateProvider',
-				function($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $translateProvider) {
+				function($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $translateProvider) {
 
 					adminApp.controller = $controllerProvider.register;
 					adminApp.directive = $compileProvider.directive;
@@ -27,17 +28,25 @@ define(['routes',
 					adminApp.factory = $provide.factory;
 					adminApp.service = $provide.service;
 
-					if (config.routes !== undefined) {
-						angular.forEach(config.routes, function(route, path) {
-							$routeProvider.when(path, {templateUrl: route.templateUrl, resolve: dependencyResolverFor(['controllers/' + route.controller]), controller: route.controller, gaPageTitle: route.gaPageTitle});
-						});
-					}
-					if (config.defaultRoutePath !== undefined) {
-						$routeProvider.otherwise({redirectTo: config.defaultRoutePath});
-					}
-
-					$translateProvider.translations('preferredLanguage', i18n);
-					$translateProvider.preferredLanguage('preferredLanguage');
+					$urlRouterProvider.otherwise('/index');
+		            $stateProvider
+		                .state('index', {
+		                    url: '/index',
+		                    views: {
+		                        '': {
+		                            templateUrl: 'views/home.html'
+		                        },
+		                        // 'header@index': {
+		                        //     templateUrl: 'views/partials/header.html'
+		                        // },
+		                        // 'left@index': {
+		                        //     templateUrl: 'views/partials/left.html'
+		                        // },
+		                        // 'main@index': {
+		                        //     templateUrl: 'views/partials/right.html'
+		                        // }
+		                    }
+		                })
 				}]);
 		return adminApp;
 	}

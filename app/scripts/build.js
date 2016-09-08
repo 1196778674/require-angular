@@ -7,6 +7,7 @@ require.config({
         alert: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert',
         angular: '../../bower_components/angular/angular',
         'angular-route': '../../bower_components/angular-route/angular-route',
+        'ui-router': '../../bower_components/angular-ui-router/release/angular-ui-router',
         'angular-translate': '../../bower_components/angular-translate/angular-translate',
         button: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button',
         bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap',
@@ -31,7 +32,7 @@ require.config({
                 'jquery'
             ]
         },
-        'angular-route': {
+        'ui-router': {
             deps: [
                 'angular'
             ]
