@@ -30,6 +30,25 @@ define([
 
 					$urlRouterProvider.otherwise('/index');
 		            $stateProvider
+		            	.state('login',{
+		                	url: '/login',
+		                	views: {
+		                		'': {
+				                    templateUrl: 'views/login.html',
+				                    controller: function($scope,$http,$window) {
+								        $scope.show =  function(){
+								        	$http.get('../../json/login.json').success(function(data){
+								        		if (data == 'true') {
+								        			$window.location = '#/index';
+								        		} else {
+								        			$window.location = '#/login';
+								        		};
+								        	})
+								        }
+								    }
+				                }
+		                	}
+		                })
 		                .state('index', {
 		                    url: '/index',
 		                    views: {
@@ -68,6 +87,22 @@ define([
 		                	views: {
 		                		'main@index': {
 				                    templateUrl: 'views/datastatistics/datastatistics.html'
+				                }
+		                	}
+		                })
+		                .state('index.changepass',{
+		                	url: '/changepassword',
+		                	views: {
+		                		'main@index': {
+				                    templateUrl: 'views/usercenter/changepass.html'
+				                }
+		                	}
+		                })
+		                .state('index.usercenter',{
+		                	url: '/usercenter',
+		                	views: {
+		                		'main@index': {
+				                    templateUrl: 'views/usercenter/usercenter.html'
 				                }
 		                	}
 		                })

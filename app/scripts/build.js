@@ -74,6 +74,7 @@ if (paths) {
 require([
         'angular',
         'adminApp',
+        'factorys/Login',
         'factorys/HttpGet',
         'directives/LeftHeightDir',
         'controllers/IndexCtrl',
