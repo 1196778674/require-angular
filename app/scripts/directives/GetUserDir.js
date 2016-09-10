@@ -5,8 +5,8 @@ define(['adminApp'], function(adminApp) {
 		return {
 			restrict: 'A',
 			link: function (scope, iElement, iAttrs) {
-				$http.get('../../json/login.json').success(function(){
-					scope.user = "刘飞";
+				$http.get('../../json/user.json').success(function(data){
+					scope.user = data.username;
 				})
 			}
 		};
