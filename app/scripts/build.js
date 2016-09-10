@@ -77,7 +77,9 @@ require([
         'factorys/Login',
         'factorys/HttpGet',
         'directives/LeftHeightDir',
+        'directives/GetUserDir',
         'controllers/IndexCtrl',
+        'controllers/LoginCtrl',
     ],
     function() {
         angular.bootstrap(document, ['adminApp']);

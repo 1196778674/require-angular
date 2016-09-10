@@ -34,18 +34,7 @@ define([
 		                	url: '/login',
 		                	views: {
 		                		'': {
-				                    templateUrl: 'views/login.html',
-				                    controller: function($scope,$http,$window) {
-								        $scope.show =  function(){
-								        	$http.get('../../json/login.json').success(function(data){
-								        		if (data == 'true') {
-								        			$window.location = '#/index';
-								        		} else {
-								        			$window.location = '#/login';
-								        		};
-								        	})
-								        }
-								    }
+				                    templateUrl: 'views/login.html'
 				                }
 		                	}
 		                })

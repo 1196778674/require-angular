@@ -5,7 +5,6 @@ define(['adminApp'], function(adminApp) {
 		var login = function(scope){
 			$http.get('../../json/login.json').success(function(data){
 				if (data == 'true') {
-					scope.user = "刘飞";
 					if ($window.location.hash == '#/login') {
 						$window.location = '#/index';
 					};
