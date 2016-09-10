@@ -10,4 +10,14 @@ define(['adminApp'], function(adminApp) {
 			}
 		};
 	}])
+
+	adminApp.directive('mainwidth', [function () {
+		return {
+			restrict: 'A',
+			link: function (scope, iElement, iAttrs) {
+				var width = $(window).width();
+				scope.width = width - 100;
+			}
+		};
+	}])
 });

@@ -12,5 +12,10 @@ modal.js
 bootstrap.js
 angular-translate.js
 adminApp.js
+factorys/Login.js
+factorys/HttpGet.js
+directives/LeftHeightDir.js
+directives/GetUserDir.js
 controllers/IndexCtrl.js
+controllers/LoginCtrl.js
 build.js

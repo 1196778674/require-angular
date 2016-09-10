@@ -1,1 +1,0 @@
-define(["adminApp"],function(a){a.directive("sample",function(){return{restrict:"E",template:"<span>Sample</span>"}})});
