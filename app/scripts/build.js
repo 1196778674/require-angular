@@ -81,6 +81,7 @@ require([
         'directives/BtnDir',
         'controllers/IndexCtrl',
         'controllers/LoginCtrl',
+        'controllers/GetListCtrl'
     ],
     function() {
         angular.bootstrap(document, ['adminApp']);

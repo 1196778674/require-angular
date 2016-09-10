@@ -7,7 +7,7 @@ define(['adminApp'], function(adminApp) {
 			templateUrl: '../views/partials/buttontest.html',
 			link: function (scope, iElement, iAttrs) {
 				scope.show = function(){
-					console.log("1");
+					scope.list = 'list1';
 				}
 			}
 		};
