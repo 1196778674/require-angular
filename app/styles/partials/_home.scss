@@ -11,6 +11,13 @@
 	border: none;
 }
 
+a{
+	outline:none;
+	&:focus{
+		outline: none;
+	}
+}
+
 .cpx-admin-main{
 	width: 100%;
 	.cpx-admin-left{
