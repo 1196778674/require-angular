@@ -9,7 +9,7 @@ define(['adminApp'], function(adminApp) {
 			$scope.welcomeText = data;
 		});
 	}])
-	.controller('TestCtrl', function ($scope) {
-	    $scope.datePicker = {startDate: null, endDate: null};
+	.controller('datepickerCtrl', function ($scope) {
+	    $scope.datePicker = {startDate: '2015-4-5', endDate: '2015-5-6'};
 	});
 });

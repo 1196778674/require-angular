@@ -1,6 +1,7 @@
 <div ng-controller="IndexCtrl">
-	<div ng-controller="TestCtrl">
-		<input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker" />
+	<div ng-controller="datepickerCtrl" class="date-picker-container form-group">
+		<label>时间：</label>
+		<input date-range-picker readonly="readonly" class="form-control date-picker" type="text" ng-model="datePicker" />
 	</div>
 	<ul>
 		<li ng-repeat="(key,value) in welcomeText">

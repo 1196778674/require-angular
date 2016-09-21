@@ -30,6 +30,7 @@ require.config({
         'moment':'../../bower_components/moment/moment',
         'daterangepicker':'../../bower_components/bootstrap-daterangepicker/daterangepicker',
         'angular-daterangepicker':'../../bower_components/angular-daterangepicker/js/angular-daterangepicker',
+        'zh-cn':'../../bower_components/moment/locale/zh-cn',
         // datepicker
     },
     shim: {

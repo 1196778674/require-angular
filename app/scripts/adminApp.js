@@ -6,6 +6,7 @@ define([
 	'ui-router',
 	'bootstrap',
 	'angular-daterangepicker',
+	'zh-cn',
 	'angular-translate'],
 	function(config, dependencyResolverFor, i18n) {
 		var adminApp = angular.module('adminApp', [
