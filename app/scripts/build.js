@@ -25,7 +25,12 @@ require.config({
         tab: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab',
         tooltip: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip',
         transition: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition',
-        'angular-ui-router': '../../bower_components/angular-ui-router/release/angular-ui-router'
+        'angular-ui-router': '../../bower_components/angular-ui-router/release/angular-ui-router',
+        // datepicker
+        'moment':'../../bower_components/moment/moment',
+        'daterangepicker':'../../bower_components/bootstrap-daterangepicker/daterangepicker',
+        'angular-daterangepicker':'../../bower_components/angular-daterangepicker/js/angular-daterangepicker',
+        // datepicker
     },
     shim: {
         angular: {

@@ -5,11 +5,13 @@ define([
 	'angular',
 	'ui-router',
 	'bootstrap',
+	'angular-daterangepicker',
 	'angular-translate'],
 	function(config, dependencyResolverFor, i18n) {
 		var adminApp = angular.module('adminApp', [
 			'ui.router',
-			'pascalprecht.translate'
+			'pascalprecht.translate',
+			'daterangepicker'
 		]);
 		adminApp
 			.config(

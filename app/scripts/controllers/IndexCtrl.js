@@ -8,5 +8,8 @@ define(['adminApp'], function(adminApp) {
 		HttpGet.httpgetlist('../../json/index.json',function(data){
 			$scope.welcomeText = data;
 		});
-	}]);
+	}])
+	.controller('TestCtrl', function ($scope) {
+	    $scope.datePicker = {startDate: null, endDate: null};
+	});
 });
