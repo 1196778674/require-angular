@@ -1,5 +1,6 @@
 /node_modules
 /.tmp
+/html
 /bower_components
 /.bowerrc
 /.editorconfig
