@@ -26,12 +26,10 @@ require.config({
         tooltip: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip',
         transition: '../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition',
         'angular-ui-router': '../../bower_components/angular-ui-router/release/angular-ui-router',
-        // datepicker
-        'moment':'../../bower_components/moment/moment',
-        'daterangepicker':'../../bower_components/bootstrap-daterangepicker/daterangepicker',
-        'angular-daterangepicker':'../../bower_components/angular-daterangepicker/js/angular-daterangepicker',
-        'zh-cn':'../../bower_components/moment/locale/zh-cn',
-        // datepicker
+        daterangepicker: '../../bower_components/bootstrap-daterangepicker/daterangepicker',
+        'angular-daterangepicker': '../../bower_components/angular-daterangepicker/js/angular-daterangepicker',
+        'zh-cn': '../../bower_components/moment/locale/zh-cn',
+        'moment-timezone': '../../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020'
     },
     shim: {
         angular: {
