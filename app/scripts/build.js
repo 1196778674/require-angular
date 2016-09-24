@@ -83,6 +83,7 @@ require([
         'factorys/HttpGet',
         'directives/LeftHeightDir',
         'directives/GetUserDir',
+        'directives/PagiNationDir',
         'directives/BtnDir',
         'controllers/IndexCtrl',
         'controllers/LoginCtrl',
