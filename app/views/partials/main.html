@@ -62,5 +62,15 @@
 
 	<div class="well">
 		<h4>活跃用户</h4>
+		<table class="user-table">
+			<tbody>
+				<tr ng-repeat="name in userList">
+					<td>{{name.store}}</td>
+					<td>今日门店活跃数:{{name.todaynumber}}</td>
+					<td>昨日门店活跃数:{{name.yestodaynumber}}</td>
+					<td>{{name.percentage}}%</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
