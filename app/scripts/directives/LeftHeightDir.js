@@ -15,7 +15,7 @@ define(['adminApp'], function(adminApp) {
 		return {
 			restrict: 'A',
 			link: function (scope, iElement, iAttrs) {
-				var width = $(window).width();
+				var width = $('body').width();
 				scope.width = width - 100;
 			}
 		};
