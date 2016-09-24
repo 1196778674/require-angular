@@ -20,6 +20,7 @@ factorys/Login.js
 factorys/HttpGet.js
 directives/LeftHeightDir.js
 directives/GetUserDir.js
+directives/PagiNationDir.js
 directives/BtnDir.js
 controllers/IndexCtrl.js
 controllers/LoginCtrl.js

@@ -4,7 +4,7 @@ define(['adminApp'], function(adminApp) {
 	adminApp.directive('pagination', ['HttpGet', function (HttpGet) {
 		return {
 			priority: 0,
-			templateUrl: './scripts/directives/template/pagination.html',
+			templateUrl: './views/template/pagination.html',
 			replace: true,
 			restrict: 'EA',
 			controller: function($scope, $element, $attrs, $transclude) {
