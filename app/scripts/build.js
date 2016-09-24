@@ -29,7 +29,8 @@ require.config({
         daterangepicker: '../../bower_components/bootstrap-daterangepicker/daterangepicker',
         'angular-daterangepicker': '../../bower_components/angular-daterangepicker/js/angular-daterangepicker',
         'zh-cn': '../../bower_components/moment/locale/zh-cn',
-        'moment-timezone': '../../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020'
+        'moment-timezone': '../../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020',
+        juicer: '../../bower_components/juicer/juicer'
     },
     shim: {
         angular: {
