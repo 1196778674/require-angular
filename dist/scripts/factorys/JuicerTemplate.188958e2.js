@@ -1,1 +1,0 @@
-define(["adminApp"],function(a){a.factory("displayTemplate",["$http",function(a){var b=function(b,c,d){a.get(c).success(function(a){d(a)})};return{displayTemplate:b}}])});
