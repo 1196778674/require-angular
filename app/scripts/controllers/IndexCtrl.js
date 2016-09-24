@@ -8,7 +8,7 @@ define(['adminApp'], function(adminApp) {
 		HttpGet.httpgetlist('../../json/index.json',function(data){
 			$scope.welcomeText = data;
 		});
-		HttpGet.httpgetlist('../../json/userlist.json',function(data){
+		HttpGet.httpgetlist('../../json/userlist1.json',function(data){
 			$scope.userList = data;
 		});
 	}])

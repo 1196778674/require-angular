@@ -14,7 +14,10 @@ define(['adminApp'], function(adminApp) {
 			},
 			link: function (scope, iElement, iAttrs) {
 				$(iElement).on('click', 'a', function(e) {
-					console.log($(e.target).data('href'));
+					var page = $(e.target).data('href');
+					HttpGet.httpgetlist('../../json/userlist'+page+'.json',function(data){
+						scope.userList = data;
+					});
 				});
 			}
 		};
